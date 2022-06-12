@@ -16,7 +16,6 @@ void buffer_insert(uint8_t *buf, uint8_t start, uint8_t length, uint64_t value)
         if (array_start < 8)
         {
             if (lsw)
-            
             {
                 buf[array_start] |= (FULL_MASK_8 << arrar_bit_num);
             }
