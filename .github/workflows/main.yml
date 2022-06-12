@@ -40,8 +40,6 @@ jobs:
       - name: Build
         run: |
           make
-          cd bin
-          zip program.zip test
       - name: Run The Test
         run: make check
       - name: Upload The Program
