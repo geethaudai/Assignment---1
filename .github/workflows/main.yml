@@ -27,7 +27,7 @@ jobs:
 
   deploy:
     # This job runs only for the push events triggered on the main branch
-    if: ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' }}
+    if: ${{ github.ref == 'refs/heads/master' && github.event_name == 'push' }}
     name: make-release
     runs-on: ubuntu-latest
     steps:
